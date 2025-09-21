@@ -3,7 +3,6 @@
 [![Stars](https://img.shields.io/github/stars/Sinchana-K28/Parallel-Computing?style=flat&logo=github)](https://github.com/Sinchana-K28/Parallel-Computing/stargazers)
 [![Forks](https://img.shields.io/github/forks/Sinchana-K28/Parallel-Computing?style=flat&logo=github)](https://github.com/Sinchana-K28/Parallel-Computing/network/members)
 [![Issues](https://img.shields.io/github/issues/Sinchana-K28/Parallel-Computing?style=flat&logo=github)](https://github.com/Sinchana-K28/Parallel-Computing/issues)
-[![License](https://img.shields.io/badge/License-MIT-green?logo=open-source-initiative)](#license)
 
 ---
 
@@ -29,3 +28,21 @@ cd Parallel-Computing
 # Compile & Run
 gcc -o p1 p1.c -fopenmp   # example
 ./p1
+
+▶️ Usage
+Compile and run
+# Basic compile
+gcc -o p1 p1.c
+./p1
+
+# With pthreads
+gcc -o p2 p2.c -pthread
+./p2
+
+# With OpenMP
+gcc -o p3 p3.c -fopenmp
+./p3
+
+# With MPI
+mpicc -o p4 p4.c
+mpirun -np 4 ./p4
